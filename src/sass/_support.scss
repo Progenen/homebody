@@ -58,11 +58,14 @@ $color1: #ff0000;
 
 
 // Fonts
-@include font-face('Roboto', '../fonts/Roboto/Roboto-SemiBold', 600, normal, ttf);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Medium', 500, normal, ttf);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', 400, normal, ttf);
+@include font-face('GolosText', '../fonts/GolosText/GolosText-SemiBold', 600, normal, ttf);
+@include font-face('GolosText', '../fonts/GolosText/GolosText-Medium', 500, normal, ttf);
+@include font-face('GolosText', '../fonts/GolosText/GolosText-Regular', 400, normal, ttf);
 
 // Vars
+$colorSurface: #AAA;
+$accentColor: #008C3A;
+$linkColor: #2C54BB;
 
 // Путь к спрайту для конкатенации
 $sprite: "../svg/dest/stack/spriteMulti.svg#";
