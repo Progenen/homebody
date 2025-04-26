@@ -12,7 +12,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    font-family: "GolosText", sans-serif;
+    font-family: "Golos Text", sans-serif;
     font-size: var(--text-size);
     color: var(--black);
     font-weight: 400;
@@ -46,13 +46,9 @@ footer {
     flex: 0 0 auto;
 }
 
-.container {
-    max-width: 1512px;
-    width: 100%;
-    margin:  0 auto;
-    padding: 0 15px;
-}
+.contaienr {
 
-.row {
-    display: flex;
+    width: 1482px;
+    margin: 0 auto;
+
 }
