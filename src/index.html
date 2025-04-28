@@ -2,7 +2,53 @@
     "class": "header-new--fixed"
 })
 <main>
+    <div class="header-product">
+        <div class="container">
+            <div class="row">
+                <div class="header-product__col header-product__col_left">
+                    <div class="header-product__card">
+                        <div class="header-product__card-img">
+                            <img src="images/header-product-card-img.webp" alt="">
+                        </div>
+                        <div class="header-product__card-text">
+                            <div class="header-product__card-title">
+                                Набор новоселам
+                            </div>
+                            <div class="header-product__card-tagline">
+                                Скандинавский интерьер
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-product__col header-product__col_middle">
+                    <div class="header-product__price">
+                        <div class="header-product__price-label">
+                            Итоговая стоимость:
+                        </div>
+                        <div class="header-product__price-val">
+                            400 994 ₽
+                        </div>
+                    </div>
+                </div>
+                <div class="header-product__col header-product__col_right">
+                    <button class="header-product__btn header-product__btn_basket">
+                        <svg>
+                            <use xlink:href='svg/dest/stack/spriteMono.svg#basket'></use>
+                        </svg>
+                        <span>
+                            Добавить в корзину
+                        </span>
+                    </button>
+                    <button class="header-product__btn header-product__btn_liked">
 
+                        <svg>
+                            <use xlink:href='svg/dest/stack/spriteMono.svg#liked'></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 </div>
 @@include('./parts/footer.html')
