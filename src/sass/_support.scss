@@ -49,20 +49,15 @@
 	@return calc($size / $vw) + vw;
 }
 
-// Переменнные | _support
-$fontSize: 16;
-$vw: 1920;
-
-// Переменные | Глобальные
-$color1: #ff0000;
-
-
 // Fonts
-@include font-face('Roboto', '../fonts/Roboto/Roboto-SemiBold', 600, normal, ttf);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Medium', 500, normal, ttf);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', 400, normal, ttf);
-
-// Vars
+@include font-face('GolosText', '../fonts/GolosText/GolosText-SemiBold', 600, normal, ttf);
+@include font-face('GolosText', '../fonts/GolosText/GolosText-Medium', 500, normal, ttf);
+@include font-face('GolosText', '../fonts/GolosText/GolosText-Regular', 400, normal, ttf);
 
 // Путь к спрайту для конкатенации
 $sprite: "../svg/dest/stack/spriteMulti.svg#";
+
+// Переменные | Глобальные
+$colorSurface: #AAA;
+$accentColor: #008C3A;
+$linkColor: #2C54BB;
