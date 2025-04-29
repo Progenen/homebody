@@ -87,6 +87,11 @@
 
   //banner 768
   .banner {
+
+    &__col_left {
+      width: 59.8462%;
+    }
+
     &__text {
       font-size: 40px;
     }
@@ -181,13 +186,24 @@
 
   //banner 576
   .banner {
+
+    &__col {
+
+      &_left {
+        width: 66.233%;
+      }
+
+      &_right {
+        width: 33.767%;
+      }
+    }
+
     &__title {
       margin-top: 40px;
     }
 
     &__content {
       margin-top: 20px;
-      border-radius: 0;
     }
 
     &__text {
@@ -200,4 +216,5 @@
       margin-top: 5px;
     }
   }
+
 }
