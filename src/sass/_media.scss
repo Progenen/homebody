@@ -26,6 +26,14 @@
       padding-left: 20px;
     }
   }
+    //    layout 1220
+    .layout {
+        &__col {
+            &_right {
+                width: auto;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -38,10 +46,45 @@
       }
     }
 
-    &__price {
-      column-gap: 20px;
+        &__price {
+            column-gap: 20px;
+        }
     }
-  }
+
+    //    layout 992
+    .layout {
+
+        .row {
+            flex-wrap: wrap;
+        }
+
+        &__col {
+            width: 100%;
+
+            &_mobile {
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 15px;
+        }
+
+        &__alert {
+            max-width: fit-content;
+        }
+
+        &__title, &__alert {
+            &_desktop {
+                display: none;
+            }
+        }
+
+        &__info {
+            max-width: 100%;
+        }
+    }
 }
 
 
@@ -50,38 +93,39 @@
 @media (max-width: 876px) {}
 
 @media (max-width: 768px) {
-
-  //  header-product 768
+//  header-product 768
   .header-product {
 
-    &__col {
+        &__col {
 
-      &_left {
-        width: 20%;
+            &_left {
+                width: 20%;
+            }
+
+      &_middle {
       }
 
-      &_middle {}
-
-      &_right {
-        flex: 1 30%;
-        min-width: 202px;
-      }
-    }
+            &_right {
+                flex: 1 30%;
+                min-width: 202px;
+            }
+        }
 
     &__card-img {
       display: none;
     }
-
+    
     &__price {
       flex-direction: column;
       align-items: flex-start;
       row-gap: 5px;
     }
 
-    &__btn {
-      &_basket {
-        min-width: 160px;
-      }
+        &__btn {
+            &_basket {
+                min-width: 160px;
+            }
+        }
     }
   }
 
@@ -109,78 +153,96 @@
       }
     }
   }
+
+    // services 768
+    .services {
+        margin-top: 40px;
+    }
+
+    // layout 768
+    .layout {
+        margin-top: 40px;
+        &__col_left {
+            max-height: fit-content;
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 420px;
+                height: initial;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
-
-  //  header-product 576
+//  header-product 576
   .header-product {
     padding: 10px 0;
-
     .row {
       flex-wrap: wrap;
       row-gap: 20px;
     }
 
-    &__col {
+        &__col {
 
-      &_left {
-        width: 60%;
-      }
+            &_left {
+                width: 60%;
+            }
 
-      &_middle {
-        margin-right: 0;
-        width: 40%;
-      }
+            &_middle {
+                margin-right: 0;
+                width: 40%;
+            }
 
       &_right {
         width: 100%;
       }
     }
-
+    
     &__price-label {
       display: none;
     }
 
-    &__price-val {
-      font-size: 18px;
-    }
+        &__price-val {
+            font-size: 18px;
+        }
 
-    &__btn {
-      &_basket {
-        flex: 1 1 auto;
-        max-width: 100%;
-      }
+        &__btn {
+            &_basket {
+                flex: 1 1 auto;
+                max-width: 100%;
+            }
+        }
     }
-  }
-
 
   // services 576
   .services {
 
-    &__title {
-      margin-bottom: 20px;
-    }
+        &__title {
+            margin-bottom: 20px;
+        }
 
-    &__wrapper {
-      flex-direction: column;
-      align-items: center;
-    }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    &__block {
-      flex: 0 1 auto;
-      border: 1px solid #d9d9d9;
-      border-radius: 20px;
-      padding: 20px;
-      width: 100%;
-    }
+        &__block {
+            flex: 0 1 auto;
+            border: 1px solid #d9d9d9;
+            border-radius: 20px;
+            padding: 20px;
+            width: 100%;
+        }
 
-    &__text-title {
-      margin-top: 20px;
-    }
+        &__text-title {
+            margin-top: 20px;
+        }
 
-    &__text-descr {
-      margin-bottom: 0;
+        &__text-descr {
+            margin-bottom: 0;
+        }
     }
   }
 
@@ -217,4 +279,34 @@
     }
   }
 
+
+    // layout 576
+    .layout {
+
+        &__img {
+            max-height: 201px;
+            border-radius: 8.851px;
+            box-shadow: 0px 0.885px 6.639px 0px rgba(0, 0, 0, 0.10);
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__alert-text {
+            font-size: 12px;
+        }
+
+        &__info {
+            margin-top: 20px;
+        }
+
+        &__characters-title {
+            margin-top: 0;
+        }
+
+        &__table {
+            margin-top: 0;
+        }
+    }
 }
