@@ -185,7 +185,11 @@
         border-radius: 20px;
         text-align: left;
         width: 100%;
+        display: flex; // Используем Flexbox для выравнивания
+        align-items: center; // Центрируем элементы по вертикали
     }
+
+    &__wrapper-col_left {}
 
     &__title {
         font-weight: 600;
@@ -209,3 +213,4 @@
         padding: 140px 0 140px 163px;
         width: 55%;
     }
+}
