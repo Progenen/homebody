@@ -4,358 +4,225 @@
 @media (max-width: 1440px) {
 }
 
-@media (max-width: 1350px) {
-
-    .container {
-        padding: 0 0 0 150px;
-    }
-
-    .layout {
-
-        &__img {
-            max-width: 600px;
-            margin: 0 20px 0 0;
-            aspect-ratio: 731 / 454;
-        }
-
-        &__wrapper_table {
-            width: clamp(230px, 90%, 560px);
-            height: clamp(204px, 90%, 408px);
-            aspect-ratio: 560 / 265;
-        }
-    }
-}
-
-@media (max-width: 1250px) {
-    .container {
-        padding: 0 0 0 80px;
-    }
-
-    .layout {
-        width: clamp(900px, 50%, 1130px);
-
-        &__img {
-            width: clamp(400px, 50%, 600px);
-            aspect-ratio: 731 / 454;
-            margin: 0 20px 0 0;
-        }
-
-        &__wrapper_right {
-            width: clamp(300px, 50%, 500px);
-            height: auto;
-        }
-
-        &__wrapper_table {
-            width: clamp(230px, 90%, 500px);
-            aspect-ratio: 560 / 265;
-        }
-
-        &__img-test {
-            aspect-ratio: 731 / 454;
-        }
-    }
-}
-
-
-
 @media (max-width: 1220px) {
-
-}
-
-@media(max-width: 1155px) {
-
+    //    layout 1220
     .layout {
-        width: 100%;
-
-        &__alert {
-            flex-direction: column;
-            padding: 10px;
-
-            &_svg {
-                display: flex;
-                flex-direction: row;
-            }
-
-            &_mobile {
-                display: flex;
-            }
-
-            &_desktop {
-                display: none;
-            }
-        }
-
-
-        &__title_mobile {
-            display: block;
-            font-weight: 600;
-            font-size: 18px;
-            color: #000;
-            margin: 0 0 10px 10px;
-        }
-
-        &__subtitle_mobile {
-            display: flex;
-            flex-direction: row;
-            font-weight: 400;
-            font-size: 14px;
-            color: #616161;
-            background: #f5f5f5;
-        }
-
-        &__subtitle {
-            display: none;
-
-            &__img {
-                width: clamp(500px, 50%, 731px);
-                height: auto;
-                aspect-ratio: 731 / 454;
-                margin: 0 auto 20px;
-            }
-
-            &__wrapper_right {
-                width: clamp(300px, 50%, 500px);
-                height: auto;
-                margin: 0 auto;
-            }
-
-            &__wrapper_table {
-                width: clamp(230px, 90%, 500px);
-                aspect-ratio: 560 / 265;
-                margin: 20px auto;
-            }
-
-            &__table_cell {
-                width: 100%;
-                max-width: 500px;
-                height: auto;
-                padding: 10px 0;
-            }
-
-            &__table_column,
-            &__table_row {
-                font-size: 14px;
+        &__col {
+            &_right {
+                width: auto;
             }
         }
     }
 }
 
 @media (max-width: 992px) {
-//  header-product 992
-  .header-product {
-    &__col {
-      &_middle {
-        margin-right: 25px;
-      }
+    //  header-product 992
+    .header-product {
+        &__col {
+            &_middle {
+                margin-right: 25px;
+            }
+        }
+
+        &__price {
+            column-gap: 20px;
+        }
     }
 
-    &__price {
-      column-gap: 20px;
+    //    layout 992
+    .layout {
+
+        .row {
+            flex-wrap: wrap;
+        }
+
+        &__col {
+            width: 100%;
+
+            &_mobile {
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 15px;
+        }
+
+        &__alert {
+            max-width: fit-content;
+        }
+
+        &__title, &__alert {
+            &_desktop {
+                display: none;
+            }
+        }
+
+        &__info {
+            max-width: 100%;
+        }
     }
-  }
 }
 
 @media (max-width: 876px) {
 }
 
 @media (max-width: 768px) {
-//  header-product 768
-  .header-product {
+    //  header-product 768
+    .header-product {
 
-    &__col {
+        &__col {
 
-      &_left {
-        width: 20%;
-      }
+            &_left {
+                width: 20%;
+            }
 
-      &_middle {
-      }
+            &_middle {
+            }
 
-      &_right {
-        flex: 1 30%;
-        min-width: 202px;
-      }
-    }
+            &_right {
+                flex: 1 30%;
+                min-width: 202px;
+            }
+        }
 
-    &__card-img {
-      display: none;
-    }
+        &__card-img {
+            display: none;
+        }
 
-    &__price {
-      flex-direction: column;
-      align-items: flex-start;
-      row-gap: 5px;
-    }
-
-    &__btn {
-      &_basket {
-        min-width: 160px;
-      }
-    }
-  }
-
-    .layout {
-        width: 100%;
-
-        &__alert {
+        &__price {
             flex-direction: column;
-            padding: 10px;
+            align-items: flex-start;
+            row-gap: 5px;
         }
 
-        &__title_mobile {
-            font-size: 16px;
-            margin-bottom: 8px;
+        &__btn {
+            &_basket {
+                min-width: 160px;
+            }
         }
+    }
 
-        &__subtitle_mobile {
-            font-size: 12px;
-            margin-top: 8px;
-        }
+    // services 768
+    .services {
+        margin-top: 40px;
+    }
 
-        &__img {
-            width: clamp(300px, 50%, 500px); // Ещё больше уменьшаем ширину изображения
-            height: auto; // Высота рассчитывается автоматически
-            aspect-ratio: 731 / 454; // Сохраняем пропорции
-            margin: 0 auto 16px; // Центрируем изображение и добавляем отступ снизу
-        }
+    // layout 768
+    .layout {
+        margin-top: 40px;
+        &__col_left {
+            max-height: fit-content;
 
-        &__wrapper_right {
-            width: clamp(250px, 50%, 400px); // Ещё больше уменьшаем ширину правого блока
-            height: auto; // Высота автоматически рассчитывается
-
-        }
-
-        &__wrapper_table {
-            width: clamp(200px, 90%, 400px); // Ещё больше уменьшаем ширину таблицы
-            aspect-ratio: 560 / 265; // Сохраняем пропорции
-            margin: 16px auto; // Центрируем таблицу и добавляем отступы
-        }
-
-        &__table_cell {
-            width: 100%; // Ячейки таблицы занимают всю ширину
-            max-width: 400px; // Ограничиваем максимальную ширину
-            height: auto; // Высота автоматически рассчитывается
-            padding: 8px 0; // Ещё больше уменьшаем внутренние отступы
-        }
-
-        &__table_column,
-        &__table_row {
-            font-size: 12px; // Ещё больше уменьшаем размер шрифта
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 420px;
+                height: initial;
+            }
         }
     }
 }
 
 @media (max-width: 576px) {
-//  header-product 576
-  .header-product {
-    padding: 10px 0;
-    .row {
-      flex-wrap: wrap;
-      row-gap: 20px;
+    //  header-product 576
+    .header-product {
+        padding: 10px 0;
+
+        .row {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+
+        &__col {
+
+            &_left {
+                width: 60%;
+            }
+
+            &_middle {
+                margin-right: 0;
+                width: 40%;
+            }
+
+            &_right {
+                width: 100%;
+            }
+        }
+
+        &__price-label {
+            display: none;
+        }
+
+        &__price-val {
+            font-size: 18px;
+        }
+
+        &__btn {
+            &_basket {
+                flex: 1 1 auto;
+                max-width: 100%;
+            }
+        }
     }
 
-    &__col {
+    // services 576
+    .services {
 
-      &_left {
-        width: 60%;
-      }
+        &__title {
+            margin-bottom: 20px;
+        }
 
-      &_middle {
-        margin-right: 0;
-        width: 40%;
-      }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
 
-      &_right {
-        width: 100%;
-      }
+        &__block {
+            flex: 0 1 auto;
+            border: 1px solid #d9d9d9;
+            border-radius: 20px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        &__text-title {
+            margin-top: 20px;
+        }
+
+        &__text-descr {
+            margin-bottom: 0;
+        }
     }
 
-    &__price-label {
-      display: none;
-    }
-
-    &__price-val {
-      font-size: 18px;
-    }
-
-    &__btn {
-      &_basket {
-        flex: 1 1 auto;
-        max-width: 100%;
-      }
-    }
-  }
-
-  // services 576
-  .services {
-
-    &__title {
-      margin-bottom: 20px;
-    }
-
-    &__wrapper {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &__block {
-      flex: 0 1 auto;
-      border: 1px solid #d9d9d9;
-      border-radius: 20px;
-      padding: 20px;
-      width: 100%;
-    }
-
-    &__text-title {
-      margin-top: 20px;
-    }
-
-    &__text-descr {
-      margin-bottom: 0;
-    }
-  }
-
+    // layout 576
     .layout {
 
-        &__alert {
-            flex-direction: column;
-
-            &_svg {
-                display: flex;
-                flex-direction: row;
-            }
-
-            &_mobile {
-                display: flex; // Делаем мобильные элементы видимыми
-            }
-
-            &_desktop {
-                display: none; // Скрываем десктопные элементы
-            }
+        &__img {
+            max-height: 201px;
+            border-radius: 8.851px;
+            box-shadow: 0px 0.885px 6.639px 0px rgba(0, 0, 0, 0.10);
         }
 
         &__title {
-            display: none; // Скрываем десктопный заголовок
+            margin-bottom: 20px;
         }
 
-
-
-        &__subtitle {
-            display: none; // Скрываем десктопный подзаголовок
+        &__alert-text {
+            font-size: 12px;
         }
 
-        &__wrapper_right {
-            margin: 0 0 0 0; // Убираем отступы
+        &__info {
+            margin-top: 20px;
         }
 
-        &__table_cell {
-            width: clamp(300px, 90%, 500px); // Адаптируем ширину таблицы
-            height: auto; // Высота автоматически рассчитывается
+        &__characters-title {
+            margin-top: 0;
         }
 
-        &__img {
-            width: clamp(300px, 50%, 600px); // Адаптируем ширину изображения
-            height: auto; // Высота рассчитывается автоматически
-            aspect-ratio: 731 / 454; // Сохраняем пропорции
+        &__table {
+            margin-top: 0;
         }
+    }
 }
