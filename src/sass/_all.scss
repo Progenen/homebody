@@ -46,9 +46,19 @@ footer {
     flex: 0 0 auto;
 }
 
-.contaienr {
-
-    width: 1482px;
+.container {
+    max-width: 1512px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
+}
 
+.row {
+    display: flex;
+}
+
+.main-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
 }

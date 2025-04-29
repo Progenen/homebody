@@ -1,26 +1,152 @@
+
+.header-product {
+    padding: 20px 0;
+    border-top: 1px solid #DEDEDE;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.10);
+
+    .row {
+        align-items: center;
+    }
+
+    &__col {
+
+        &_left {
+            width: 30%;
+        }
+
+        &_middle {
+            width: 49.866%;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 50px;
+        }
+
+        &_right {
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+            flex: 1;
+            min-width: 248px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &__card-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__card-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+    }
+
+    &__card-title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__card-tagline {
+        color: $colorSurface;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    &__price-label {
+        font-size: 14px;
+    }
+
+    &__price-val {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__btn {
+        border-radius: 6px;
+        cursor: pointer;
+        border: none;
+
+        &_basket {
+            padding: 10px;
+            max-width: 200px;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 6px;
+            background-color: $accentColor;
+            color: #fff;
+            font-size: 12px;
+            border: 1px solid transparent;
+            transition: 0.3s;
+
+            svg {
+                width: 16px;
+                height: 16px;
+                transition: color, background-color 0.3s;
+            }
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+
+        &_liked {
+            background-color: #E6F4EC;
+            padding: 11.56px 10.812px;
+
+            svg {
+                width: 16.384px;
+                height: 14.895px;
+                display: block;
+            }
+        }
+    }
+}
+
+
 .services {
     margin-top: 90px;
 
     &__title {
-        font-weight: 600;
-        font-size: 20px;
-        color: #000;
-
+        margin-top: 0;
+        margin-bottom: 30px;
     }
 
     &__wrapper {
         display: flex;
-        justify-content: space-around;
+        align-items: stretch;
+        gap: 25px 19.33px;
+        flex-wrap: wrap;
     }
 
     &__block {
-        margin-top: 30px;
+        flex: 1 1 356px;
         border: 1px solid #d9d9d9;
         border-radius: 20px;
         padding: 20px;
-        width: 356px;
-        height: 100%;
-        gap: 19px;
     }
 
     &__icons {
@@ -39,14 +165,14 @@
         border-radius: 10px;
     }
 
-    &__text_title {
+    &__text-title {
         margin-top: 30px;
         font-weight: 500;
         font-size: 18px;
         color: #000;
     }
 
-    &__text_descr {
+    &__text-descr {
         margin: 10px 0 20px 0;
         font-weight: 400;
         font-size: 14px;
@@ -54,148 +180,6 @@
     }
 }
 
-.header-product {
-  padding: 20px 0;
-  border-top: 1px solid #DEDEDE;
-  background: #FFF;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.10);
-
-  .row {
-    align-items: center;
-  }
-
-  &__col {
-
-    &_left {
-      width: 30%;
-    }
-
-    &_middle {
-      width: 49.866%;
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 50px;
-    }
-
-    &_right {
-      display: flex;
-      column-gap: 10px;
-      align-items: center;
-      flex: 1;
-      min-width: 248px;
-    }
-  }
-
-  &__card {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-  }
-
-  &__card-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &__card-text {
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
-  }
-
-  &__card-title {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  &__card-tagline {
-    color: $colorSurface;
-    font-size: 12px;
-    font-weight: 400;
-  }
-
-  &__price {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-  }
-
-  &__price-label {
-    font-size: 14px;
-  }
-
-  &__price-val {
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  &__btn {
-    border-radius: 6px;
-    cursor: pointer;
-    border: none;
-
-    &_basket {
-      padding: 10px;
-      max-width: 200px;
-      width: 100%;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      column-gap: 6px;
-      background-color: $accentColor;
-      color: #fff;
-      font-size: 12px;
-      border: 1px solid transparent;
-      transition: 0.3s;
-      svg {
-        width: 16px;
-        height: 16px;
-        transition: color, background-color 0.3s;
-      }
-
-      &:hover {
-        transform: translateY(-2px);
-      }
-    }
-
-    &_liked {
-      background-color: #E6F4EC;
-      padding: 11.56px 10.812px;
-
-      svg {
-        width: 16.384px;
-        height: 14.895px;
-        display: block;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 360px) {
-    .services {
-        &__wrapper {
-            flex-direction: column;
-            align-items: center;
-        }
 
-        &__block {
-            border: 1px solid #d9d9d9;
-            border-radius: 20px;
-            padding: 20px;
-            width: 328px;
-            height: 149px;
-        }
-    }
-
-    .container {
-        padding: 0 16px;
-    }
 }
