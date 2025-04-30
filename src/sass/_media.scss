@@ -1,31 +1,33 @@
-@media (max-width: 1600px) {}
+@media (max-width: 1600px) {
+}
 
-@media (max-width: 1440px) {}
+@media (max-width: 1440px) {
+}
 
 @media (max-width: 1220px) {
 
-  //  banner 1220
-  .banner {
-    &__wrapper {
-      background-size: cover;
-      background-position: 300px center;
-    }
+    //  banner 1220
+    .banner {
+        &__wrapper {
+            background-size: cover;
+            background-position: 300px center;
+        }
 
-    &__wrapper-content {
-      padding-left: 60px;
-      padding-right: 30px;
-      width: 60%;
-    }
+        &__wrapper-content {
+            padding-left: 60px;
+            padding-right: 30px;
+            width: 60%;
+        }
 
-  }
+    }
 }
 
 @media (max-width: 1024px) {
-  .banner {
-    &__col_left {
-      padding-left: 20px;
+    .banner {
+        &__col_left {
+            padding-left: 20px;
+        }
     }
-  }
     //    layout 1220
     .layout {
         &__col {
@@ -38,13 +40,13 @@
 
 @media (max-width: 992px) {
 
-  //  header-product 992
-  .header-product {
-    &__col {
-      &_middle {
-        margin-right: 25px;
-      }
-    }
+    //  header-product 992
+    .header-product {
+        &__col {
+            &_middle {
+                margin-right: 25px;
+            }
+        }
 
         &__price {
             column-gap: 20px;
@@ -88,13 +90,12 @@
 }
 
 
-
-
-@media (max-width: 876px) {}
+@media (max-width: 876px) {
+}
 
 @media (max-width: 768px) {
-//  header-product 768
-  .header-product {
+    //  header-product 768
+    .header-product {
 
         &__col {
 
@@ -102,8 +103,8 @@
                 width: 20%;
             }
 
-      &_middle {
-      }
+            &_middle {
+            }
 
             &_right {
                 flex: 1 30%;
@@ -111,15 +112,15 @@
             }
         }
 
-    &__card-img {
-      display: none;
-    }
-    
-    &__price {
-      flex-direction: column;
-      align-items: flex-start;
-      row-gap: 5px;
-    }
+        &__card-img {
+            display: none;
+        }
+
+        &__price {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 5px;
+        }
 
         &__btn {
             &_basket {
@@ -127,32 +128,31 @@
             }
         }
     }
-  }
 
-  //banner 768
-  .banner {
+    //banner 768
+    .banner {
 
-    &__col_left {
-      width: 59.8462%;
+        &__col_left {
+            width: 59.8462%;
+        }
+
+        &__text {
+            font-size: 40px;
+        }
+
+        &__img-desktop {
+            display: none;
+        }
+
+        &__img-mobile {
+            display: block;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
     }
-
-    &__text {
-      font-size: 40px;
-    }
-
-    &__img-desktop {
-      display: none;
-    }
-
-    &__img-mobile {
-      display: block;
-
-      img {
-        width: 100%;
-        display: block;
-      }
-    }
-  }
 
     // services 768
     .services {
@@ -162,6 +162,7 @@
     // layout 768
     .layout {
         margin-top: 40px;
+
         &__col_left {
             max-height: fit-content;
 
@@ -175,14 +176,17 @@
     }
 }
 
+
+
 @media (max-width: 576px) {
-//  header-product 576
-  .header-product {
-    padding: 10px 0;
-    .row {
-      flex-wrap: wrap;
-      row-gap: 20px;
-    }
+    //  header-product 576
+    .header-product {
+        padding: 10px 0;
+
+        .row {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
 
         &__col {
 
@@ -195,14 +199,14 @@
                 width: 40%;
             }
 
-      &_right {
-        width: 100%;
-      }
-    }
-    
-    &__price-label {
-      display: none;
-    }
+            &_right {
+                width: 100%;
+            }
+        }
+
+        &__price-label {
+            display: none;
+        }
 
         &__price-val {
             font-size: 18px;
@@ -216,8 +220,8 @@
         }
     }
 
-  // services 576
-  .services {
+    // services 576
+    .services {
 
         &__title {
             margin-bottom: 20px;
@@ -244,40 +248,40 @@
             margin-bottom: 0;
         }
     }
-  }
 
-  //banner 576
-  .banner {
 
-    &__col {
+    //banner 576
+    .banner {
 
-      &_left {
-        width: 66.233%;
-      }
+        &__col {
 
-      &_right {
-        width: 33.767%;
-      }
+            &_left {
+                width: 66.233%;
+            }
+
+            &_right {
+                width: 33.767%;
+            }
+        }
+
+        &__title {
+            margin-top: 40px;
+        }
+
+        &__content {
+            margin-top: 20px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+
+        &__subtext {
+            max-width: 198px;
+            font-size: 8px;
+            margin-top: 5px;
+        }
     }
-
-    &__title {
-      margin-top: 40px;
-    }
-
-    &__content {
-      margin-top: 20px;
-    }
-
-    &__text {
-      font-size: 20px;
-    }
-
-    &__subtext {
-      max-width: 198px;
-      font-size: 8px;
-      margin-top: 5px;
-    }
-  }
 
 
     // layout 576

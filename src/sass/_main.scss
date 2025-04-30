@@ -3,7 +3,10 @@
     border-top: 1px solid #DEDEDE;
     background: #FFF;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.10);
-
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
     .row {
         align-items: center;
     }
